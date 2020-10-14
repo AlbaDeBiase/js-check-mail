@@ -20,15 +20,17 @@ for(var i = 0; i < email.length; i++) {
     console.log(email[i]);
 // var elementoArray = email[i];
 
-if (email == tuaEmail) {
+if (tuaEmail == email[i]) {
 // console.log("tuaEmail è presente");
 isFound = true;
 
     }
 }
+// Comunicare quindi un messaggio appropriato (sei in lista/non sei in lista)
 
-if (isFound) {
-console.log("tuaEmail è stata trovata");
+if (isFound == true) {
+alert("tuaEmail è stata trovata");
+
 } else {
-console.log("tuaEmail NON è stata trovata");
+alert("tuaEmail NON è stata trovata");
 }
